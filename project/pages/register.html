@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="../index.html" id="logo-icon">VocabApp</a>
+      </div>
+      <div id="navigation-btn">
+        <button id="gs-btn"><a href="./login.html">Log in</a></button>
+        <button id="ca-btn"><a href="./register.html">Register</a></button>
+      </div>
+    </nav>
+
+<div id="body">
+    <form id="register-form">
+        <h2 class="login-title">Register</h2>
+         <div>
+          <label for="user-first-name">First name <span class="red">*</span></label>
+      <input
+        id="user-first-name"
+        type="text"
+      />
+      <span id="fn-alert">First name can not blank</span>
+         </div>
+       <div>
+        <label for="user-last-name">Last name <span class="red">*</span></label>
+      <input
+        id="user-last-name"
+        type="text"
+      />
+      <span id="ln-alert">Last name can not blank </span>
+       </div>
+      <div>
+        <label for="user-email">Email <span class="red">*</span></label>
+      <input
+        id="user-email" 
+        type="email"
+      />
+      <span id="email-alert">Email can not blank</span>
+      </div>
+     <div class="input-pass">
+       <label for="user-password">Password <span class="red">*</span></label>
+      <div class="password-box">
+        <input
+        id="user-password"
+        type="password" 
+      />
+      <span class="toggle-password" id="togglePassword"><img src="../icons8-closed-eye-30.png"></span>
+      </div>
+      <span id="ps-alert">Password phai nhieu hon 8 ky tu and can not blank</span>
+     </div >
+      <div class="input-pass">
+        <label for="user-password-cf">Confirm Password <span class="red">*</span></label>
+        
+     <div class="password-box">
+       <input
+        id="user-password-cf"
+        type="password"
+      /><span class="toggle-password" id="toggleConfirm"><img src="../icons8-closed-eye-30.png"></span>
+     </div>
+      <span id="confirm-ps-alert">Confirm Password have to match with password</span>
+      </div>
+      <button class="btn-sign-up" type="submit">Register</button>
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="../js/auth.js"></script>
+  
+</body>
+</html>

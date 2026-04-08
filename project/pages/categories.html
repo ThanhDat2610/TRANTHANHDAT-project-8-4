@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <a href="../index.html" id="logo-icon">VocabApp</a>
+        <a href=""> Dashboard</a>
+        <a  class="blue" href="./categories.html">Categories</a>
+        <a href="./vocabulary.html">Vocabulary</a>
+        <a href="./flashcard.html">Flashcards</a>
+        <a href="">Quiz</a>
+      </div>
+      <div>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <div id="body">
+      <div id="categories-title">
+        <h2>Vocabulary Categories</h2>
+        <button id="add-new">Add New Category</button>
+      </div>
+      <input id="search-bar" type="text" placeholder="Search categories..." />
+      <table>
+        <thead>
+          <th>NAME</th>
+          <th>DESCIRPTION</th>
+          <th>ACTIONS</th>
+        </thead>
+        <tbody id="table-body">
+          <!-- <tr>
+            <td>Con vật</td>
+            <td></td>
+            <td>
+              <a class="edit-btn" href="#">Edit</a>
+              <a class="delete-btn" href="#">Delete</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Cây cối</td>
+            <td></td>
+            <td>
+              <a class="edit-btn" href="#">Edit</a>
+              <a class="delete-btn" href="#">Delete</a>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+<div id="pagination"></div>
+
+    </div>
+    <footer>
+      <p>© 2024 VocabApp. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/categories.js"></script>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- <div class="warpper"></div> -->
+    <nav>
+      <div id="logo">
+        <a href="../index.html" id="logo-icon">VocabApp</a>
+        <a href=""> Dashboard</a>
+        <a href="./categories.html">Categories</a>
+        <a href="./vocabulary.html">Vocabulary</a>
+        <a class="blue" href="./flashcard.html">Flashcards</a>
+        <a href="">Quiz</a>
+      </div>
+      <div>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2>Flashcard Learning</h2>
+
+      <!-- Select -->
+      <select class="category" id="select-cate">
+        <option>All Categories</option>
+      </select>
+
+      <!-- Flashcard -->
+      <div class="card" id="flashcard">
+        <div class="card-inner" id="cardInner">
+          <div class="card-front" id="cardFront">Word</div>
+          <div class="card-back" id="cardBack">Meaning</div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="actions">
+        <button class="btn blue-btn" id="prevBtn">Previous</button>
+        <button class="btn green-btn" id="learnBtn">Mark as Learned</button>
+        <button class="btn blue-btn" id="nextBtn">Next</button>
+      </div>
+
+      <!-- Progress -->
+      <div class="progress-section">
+        <div class="progress-text">
+          <span>Progress</span>
+          <span id="progressText">0/0</span>
+        </div>
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+      <input id="search-bar" class="search" placeholder="Search word..." />
+
+      <!-- Table -->
+      <h3>Word List</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>WORD</th>
+            <th>MEANING</th>
+            <th>STATUS</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- data here -->
+        </tbody>
+      </table>
+      <div id="pagination"></div>
+    </div>
+    <footer>© 2024 VocabApp. All rights reserved.</footer>
+
+    <script src="../js/flashcard.js"></script>
+  </body>
+</html>
